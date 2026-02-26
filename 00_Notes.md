@@ -169,13 +169,13 @@ public class DataType{
         System.out.println("The value of String variable is : " + myString );
         System.out.println("The limit of String variable is a line." );
 
-        var myVar = 5;  // x is an int
+        var myVar = 5; 
         System.out.println("The value of var variable is : " + myVar );
         System.out.println("A variable declared with var compiler automatically detect and assign data type." );
 
         final int myFinal = 15;
         System.out.println("The value of String variable is : " + myFinal );
-        System.out.println("A variable declared with final becomes a constant,." );
+        System.out.println("A variable declared with final becomes a constant." );
 
     }
 }
