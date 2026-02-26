@@ -116,6 +116,8 @@ There are eight primitive data types in Java:
 | 8. char	    | Stores a single character/letter or ASCII values |
 
 > A non-primitive data type Store memory references to objects. These types are created by the programmer (except for String) and store references (memory addresses) to objects on the heap memory, rather than the values themselves. They can also access methods and default to null if uninitialized.
+
+There are foue non-primitive data types in Java:
 | Data Type |	Description |
 |---|---|
 | 1. String   | Represents a sequence of characters enclosed in double quotes. String cannot be modified after creation |
