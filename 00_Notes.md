@@ -179,6 +179,33 @@ public class DataType{
 
     }
 }
+
+// Output 
+/*
+Hello, From Java!
+The value of Byte variable is : 120
+The limit of Byte variable is from -128 t0 127.
+The value of short variable is : 5000
+The limit of short variable is from -32,768 to 32,767.
+The value of int variable is : 65000
+The limit of int variable is from -2,147,483,648 to 2,147,483,647
+The value of long variable is : 9999999999
+The limit of long variable is from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. Mention L at the end of value.
+The value of float variable is : 3.141592
+The limit of float variable is Sufficient for storing 6 to 7 decimal digits. Mention F at the end of the value.
+The value of double variable is : 3.14159265358979
+The limit of double variable is Sufficient for storing 15 to 16 decimal digits. Mention D at the end of the value.
+The value of boolean variable is : false
+The limit of boolean variable is true or false.
+The value of char variable is : @
+The limit of char variable is a charachter like '@' or 'A'.
+The value of String variable is : Hello Java !
+The limit of String variable is a line.
+The value of var variable is : 5
+A variable declared with var compiler automatically detect and assign data type.
+The value of String variable is : 15
+A variable declared with final becomes a constant.
+*/
 ```
 
 
