@@ -123,7 +123,7 @@ There are foue non-primitive data types in Java:
 | 1. String   | Represents a sequence of characters enclosed in double quotes. String cannot be modified after creation. |
 | 2. Array    | Stores multiple elements of the same type in single structure. Array are objects, dynamically allocated, indexed from 0.|
 | 3. Class    | User-defined blueprint that defines variables and methods. Represents a type of object and forms the foundation of OOP. |
-| 4. Object   | An instance of a class representing real-world entities. It has state (data), behavior (methods), and identity (unique reference). |
+| 4. Object   | Instance of a class representing real-world entities, has state (data), behavior (methods), and identity (unique reference). |
 
 ### Example Code
 ```java
