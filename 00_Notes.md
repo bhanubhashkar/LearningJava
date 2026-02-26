@@ -116,11 +116,12 @@ There are eight primitive data types in Java:
 | 8. char	    | Stores a single character/letter or ASCII values |
 
 > A non-primitive data type Store memory references to objects. These types are created by the programmer (except for String) and store references (memory addresses) to objects on the heap memory, rather than the values themselves. They can also access methods and default to null if uninitialized.
-* Data Type	Description
-1. String   Represents a sequence of characters enclosed in double quotes. String cannot be modified after creation
-2. Array    Stores multiple elements of the same type in a single structure. Array are objects, dynamically allocated, and indexed from 0.
-3. Class    User-defined blueprint that defines variables and methods. Represents a type of object and forms the foundation of Object-Oriented Programming.
-4. Object   An instance of a class representing real-world entities. It has state (data), behavior (methods), and identity (unique reference).
+| Data Type |	Description |
+|---|---|
+| 1. String   | Represents a sequence of characters enclosed in double quotes. String cannot be modified after creation |
+| 2. Array    | Stores multiple elements of the same type in a single structure. Array are objects, dynamically allocated, and indexed from 0.|
+| 3. Class    | User-defined blueprint that defines variables and methods. Represents a type of object and forms the foundation of Object-Oriented Programming. |
+| 4. Object   | An instance of a class representing real-world entities. It has state (data), behavior (methods), and identity (unique reference). |
 
 ### Example Code
 ```java
