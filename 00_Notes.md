@@ -104,7 +104,7 @@ Data types are divided into two groups:
 > Primitive data types store simple values directly in memory. Java provides eight primitive data types, each with a fixed size and range. A primitive data type specifies the type of a variable and the kind of values it can hold.
 
 There are eight primitive data types in Java:
-| * Data Type |	Description |
+| Data Type |	Description |
 |---|---|
 | 1. byte       | Stores whole numbers from -128 to 127 |
 | 2. short      | Stores whole numbers from -32,768 to 32,767 |
