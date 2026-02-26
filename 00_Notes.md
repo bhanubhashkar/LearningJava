@@ -106,14 +106,14 @@ Data types are divided into two groups:
 There are eight primitive data types in Java:
 | * Data Type |	Description |
 |---|---|
-| 1. byte	  |  Stores whole numbers from -128 to 127 |
-2. short	Stores whole numbers from -32,768 to 32,767
-3. int	    Stores whole numbers from -2,147,483,648 to 2,147,483,647
-4. long	    Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
-5. float	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
-6. double	Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits
-7. boolean	Stores true or false values
-8. char	    Stores a single character/letter or ASCII values
+| 1. byte       | Stores whole numbers from -128 to 127 |
+| 2. short      | Stores whole numbers from -32,768 to 32,767 |
+| 3. int	    | Stores whole numbers from -2,147,483,648 to 2,147,483,647 |
+| 4. long	    | Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| 5. float	    | Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits |
+| 6. double	    | Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits |
+| 7. boolean	| Stores true or false values |
+| 8. char	    | Stores a single character/letter or ASCII values |
 
 > A non-primitive data type Store memory references to objects. These types are created by the programmer (except for String) and store references (memory addresses) to objects on the heap memory, rather than the values themselves. They can also access methods and default to null if uninitialized.
 * Data Type	Description
