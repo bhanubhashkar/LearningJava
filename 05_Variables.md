@@ -1,4 +1,4 @@
-## Introduction to Java
+## Variables Java
 > Variables are containers for storing data values.
 
 > In Java, there are different types of variables, for example:
@@ -6,4 +6,9 @@
 * int - stores integers (whole numbers), without decimals, such as 123 or -123
 * float - stores floating point numbers, with decimals, such as 19.99 or -19.99
 * char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
-* boolean - stores values with two states: true or f
+* boolean - stores values with two states: true or false
+
+> The var keyword lets the compiler automatically detect the type of a variable based on the value we assign to it.
+
+> A variable declared with final becomes a constant, which means unchangeable and read-only.
+
