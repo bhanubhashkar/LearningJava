@@ -26,5 +26,13 @@ There are eight primitive data types in Java:
 4. Object   An instance of a class representing real-world entities. It has state (data), behavior (methods), and identity (unique reference).
 
 
-
-
+### Size of Data Types
+Datatype	Bits Acquired In Memory 
+boolean	    1
+byte	    8 (1 byte)
+char	    16 (2 bytes)
+short	    16(2 bytes)
+int	        32 (4 bytes)
+long	    64 (8 bytes)
+float	    32 (4 bytes)
+double	    64 (8 bytes)

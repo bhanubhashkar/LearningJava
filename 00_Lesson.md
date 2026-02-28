@@ -6,7 +6,7 @@
 04. Done : 04 - Java Working
 05. Done : 05 - Variables
 06. Done : 06 - Data Types
-07.  : 07 - Type Conversion 
+07. Done : 07 - Type Conversion 
 08.  : 08 - Literals & Operators
 09.  : 09 - Arithmatic  
 10.  : 10 - Assignment
