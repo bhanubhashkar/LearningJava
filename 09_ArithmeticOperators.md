@@ -3,7 +3,7 @@
 
 * Arithmetic operators are used to perform common mathematical operations.
 
-| Operator | Name | Description	Example	Try it | 
+| Operator | Description | Example | 
 |---|---|---|
 | +	Addition | Adds together two values	| x + y	|
 | -	Subtraction	| Subtracts one value from another | x - y |
