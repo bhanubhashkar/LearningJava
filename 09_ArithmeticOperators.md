@@ -1,7 +1,5 @@
 ## Operators
-> In Java, operators are special symbols used to perform operations on variables and values. They are the fundamental tools for implementing logic, computation, and control flow in a program. 
-
-* Arithmetic operators are used to perform common mathematical operations.
+> Arithmetic operators are used to perform common mathematical operations.
 
 | Operator | Description | Example | 
 |---|---|---|
