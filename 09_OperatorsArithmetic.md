@@ -21,11 +21,59 @@
 | Value Returned | Returns the updated value. | Returns the original value. |
 | Performance | May be negligibly faster with primitive types as no temporary copy is needed. | Requires creating a temporary copy of the original value, which is a minor overhead. |
 
+
 ### Example Arithmetic Operators
 ```java
+import java.lang.*;
 
+public class OperatorsArithmetic{
+    public static void main (String[] Args){
+        int myNum = 25;
+        int newNum = 4;
+        int result;
+
+        result = myNum + newNum;
+        System.out.println("Addition : " + myNum + " + " + newNum + " = " + result); 
+
+        result = myNum - newNum;
+        System.out.println("Substraction : " + myNum + " - " + newNum + " = " + result); 
+
+        result = myNum * newNum;
+        System.out.println("Multiplication : " + myNum + " * " + newNum + " = " + result); 
+
+        result = myNum / newNum;
+        System.out.println("Quotient : " + myNum + " / " + newNum + " = " + result); 
+
+        result = myNum % newNum;
+        System.out.println("Remainder : " + myNum + " % " + newNum + " = " + result); 
+
+        myNum++;
+        System.out.println("Increment myNum++ : " + myNum ); 
+
+        newNum--;
+        System.out.println("Decrement newNum-- : " + newNum ); 
+
+        int x = 5;
+        int y = ++x; 
+        // x becomes 6, then y is assigned the new value of x (6).
+        // Result: x = 6, y = 6
+
+        int x = 5;
+        int y = x++; 
+        // The original value of x (5) is assigned to y.
+        // Then x is incremented to 6.
+        // Result: x = 6, y = 5
+
+    }
+}
 // Output
 /*
-
+Addition : 25 + 4 = 29
+Substraction : 25 - 4 = 21
+Multiplication : 25 * 4 = 100
+Quotient : 25 / 4 = 6
+Remainder : 25 % 4 = 1
+Increment myNum++ : 26
+Decrement newNum-- : 3
 */
 ```
