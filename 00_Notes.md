@@ -208,5 +208,178 @@ A variable declared with final becomes a constant.
 */
 ```
 
+## Data Types in Java
+Type casting means converting one data type into another. For example, turning an int into a double.
 
+In Java, there are two main types of casting:
+
+1. Widening Type Casting (Implicit Casting)
+Widening casting is done automatically when passing a smaller size type into a larger size type.
+
+This works because there is no risk of losing information. For example, an int value can safely fit inside a double:
+Widening Casting (automatic) - converting a smaller type to a larger type size
+> byte -> short -> int -> long -> float -> double
+
+
+2. Narrowing Type Casting (Explicit Casting)
+Narrowing casting must be done manually by placing the type in parentheses () in front of the value.
+
+This is required because narrowing may result in data loss (for example, dropping decimals when converting a double to an int):
+Data loss every time the converting data size is greater than the size of new datatype.
+For floating number only decimal points gets eliminated, but in case of whole number garbage data can be the result while converting to smaller size.
+Narrowing Casting (manual) - converting a larger type to a smaller type size
+> double -> float -> long -> int -> char -> short -> byte
+
+* If result of any operation is greater than current datatype it is promoted to increased datatype. Ex multiplication result of two byte size data 10 and 25 is 250 which is greater than range of byte is auto promoted to int type.
+
+Mainly there are two types of Explicit Casting:
+Explicit Upcasting
+Explicit Downcasting 
+
+
+### Example Code - Type Casting Implicit
+```java
+import java.lang.*;
+
+public class TypeCastingImplicit {
+    public static void main (String[] args) {
+
+        byte myByte = 11;
+        byte newByte;
+        short myShort = 2345;
+        short newShort;
+        int myInt = 12345678;
+        int newInt;
+        long myLong = 123456L;
+        long newLong;
+        float myFloat = 1.98765F;
+        float newFloat;
+        double myDouble = 9.9876543210D;
+        double newDouble;
+
+        // byte to short : 
+        System.out.println("The value of myByte variable is : " + myByte );
+        newShort = myByte;
+        System.out.println("Typecasted from myByte to newShort is : " + newShort );
+        
+        // short to int : 
+        System.out.println("The value of myShort variable is : " + myShort );
+        newInt = myShort;
+        System.out.println("Typecasted from myShort to newInt is : " + newInt );
+
+        // int to long :
+        System.out.println("The value of myInt variable is : " + myInt );
+        newLong = myInt;
+        System.out.println("Typecasted from myInt to newLong is : " + newLong );
+
+        // long to float : 
+        System.out.println("The value of myLong variable is : " + myLong );
+        newFloat = myLong;
+        System.out.println("Typecasted from myLong to newFloat is : " + newFloat );
+
+        // float to double : 
+        System.out.println("The value of myFloat variable is : " + myFloat );
+        newDouble = myFloat;
+        System.out.println("Typecasted from myFloat to newDouble is : " + newDouble );
+    }
+}
+```
+
+### Example Code - Type Casting Explicit
+```java
+import java.lang.*;
+
+public class TypeCastingExplicit {
+    public static void main (String[] args) {
+
+        double myDouble = 3.141592653589793D;
+        float myFloat = 123456.12345678F;
+        float newFloat;
+        long myLong = 2147483647L;
+        long newLong;
+        int myInt = 32767;
+        int newInt;
+        short myShort = 127;
+        short newShort;
+        byte myByte = 123;
+        byte newByte;
+
+
+        // double to float : Eliminated all decimal point after 6-7 decimal place
+        System.out.println("The value of myDouble variable is : " + myDouble );
+        newFloat = (float)myDouble;
+        System.out.println("Typecasted from myDouble to newFloat is : " + newFloat );
+        
+        // float to long : Eliminates all decimal points 
+        System.out.println("The value of myFloat variable is : " + myFloat );
+        newLong = (long)myFloat;
+        System.out.println("Typecasted from myFloat to newLong is : " + newLong );
+
+        // long to int : Stores garbage if long value is greater than the int limit i.e 2147483647
+        System.out.println("The value of myLong variable is : " + myLong );
+        newInt = (int)myLong;
+        System.out.println("Typecasted from myLong to newInt is : " + newInt );
+
+        // int to short : Stores garbage if int value is greater than the short limit i.e 32767
+        System.out.println("The value of myInt variable is : " + myInt );
+        newShort = (short)myInt;
+        System.out.println("Typecasted from myInt to newShort is : " + newShort );
+
+        // short to byte : Stores garbage if int value is greater than the byte limit i.e 127
+        System.out.println("The value of myShort variable is : " + myShort );
+        newByte = (byte)myShort;
+        System.out.println("Typecasted from myShort to newVyte is : " + newByte );
+
+    }
+}
+```
+
+### Example Code - Type Casting String and Boolean
+```java
+import java.lang.*;
+
+public class TypeCastingString {
+    public static void main (String[] args) {
+
+        // String to int
+        String myStr = "123";
+        int myNum = Integer.parseInt(myStr);
+        System.out.println(myNum);
+
+        // int to String
+        int newNum = 987654321;
+        String newStr = String.valueOf(newNum); 
+        System.out.println(newStr);
+
+        int otherNum = 12345;
+        String str = "" + otherNum;
+        System.out.println(str); 
+
+        // double to String
+        double myDouble = 858.4898765;
+        String otherStr = Double.toString(myDouble);
+        System.out.println(otherStr);
+
+        // String to boolean : It returns true only if the string argument is not null and is equal to the string "true" ignoring case otherwise, it returns false.
+        // Boolean.parseBoolean(String s): This static method returns a primitive boolean value.
+        String strTrue = "TrUe";
+        boolean boolTrue = Boolean.parseBoolean(strTrue); 
+        System.out.println(boolTrue); 
+
+        String strFalse = "yes";
+        boolean boolFalse = Boolean.parseBoolean(strFalse);
+        System.out.println(boolFalse); 
+
+        // Boolean.valueOf(String s): This static method returns a Boolean object representing the value.
+        String strTrue2 = "tRuE";
+        Boolean boolTrue2 = Boolean.valueOf(strTrue2);
+        System.out.println(boolTrue2); 
+
+        String strFalse2 = "anything";
+        Boolean boolFalse2 = Boolean.valueOf(strFalse2);
+        System.out.println(boolFalse2); 
+        
+    }
+}
+```
 
