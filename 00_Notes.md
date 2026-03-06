@@ -283,6 +283,19 @@ public class TypeCastingImplicit {
         System.out.println("Typecasted from myFloat to newDouble is : " + newDouble );
     }
 }
+// Output 
+/*
+The value of myByte variable is : 11
+Typecasted from myByte to newShort is : 11
+The value of myShort variable is : 2345
+Typecasted from myShort to newInt is : 2345
+The value of myInt variable is : 12345678
+Typecasted from myInt to newLong is : 12345678
+The value of myLong variable is : 123456
+Typecasted from myLong to newFloat is : 123456.0
+The value of myFloat variable is : 1.98765
+Typecasted from myFloat to newDouble is : 1.9876500368118286
+*/
 ```
 
 ### Example Code - Type Casting Explicit
@@ -332,6 +345,19 @@ public class TypeCastingExplicit {
 
     }
 }
+// Output 
+/*
+The value of myDouble variable is : 3.141592653589793
+Typecasted from myDouble to newFloat is : 3.1415927
+The value of myFloat variable is : 123456.125
+Typecasted from myFloat to newLong is : 123456
+The value of myLong variable is : 2147483647
+Typecasted from myLong to newInt is : 2147483647
+The value of myInt variable is : 32767
+Typecasted from myInt to newShort is : 32767
+The value of myShort variable is : 127
+Typecasted from myShort to newVyte is : 127
+*/
 ```
 
 ### Example Code - Type Casting String and Boolean
@@ -381,6 +407,17 @@ public class TypeCastingString {
         
     }
 }
+// Output 
+/*
+123
+987654321
+12345
+858.4898765
+true
+false
+true
+false
+*/
 ```
 
 ## Literals
@@ -400,3 +437,181 @@ For example, in the statement int age = 25;, the value 25 is an integer literal.
 6. Bitwise & Shift : Operate on individual bits (&, |, ^, ~, <<, >>, >>>).
 7. Ternary      : A compact if-else shortcut (? :).
 8. instanceof   : Tests object type.
+
+## Arithmetic Operators
+> Arithmetic operators are used to perform common mathematical operations.
+
+| Operator | Description | Example | 
+|---|---|---|
+| +	Addition | Adds together two values	| x + y	|
+| -	Subtraction	| Subtracts one value from another | x - y |
+| *	Multiplication | Multiplies two values | x * y |
+| /	Division | Divides one value by another | x / y |	
+| %	Modulus | Returns the division remainder | x % y |
+| ++ Increment | Increases the value of a variable by 1 | ++x |
+| -- Decrement | Decreases the value of a variable by 1 | --x |
+
+> Pre-Increment : The value of the variable is incremented first, and then the new, updated value is passed.
+
+> Post-Increment : The original value of the variable is used, and then the variable is incremented.
+
+| Parameter | Pre-Increment (++x) | Post-Increment (x++) |
+|---|---|---|
+| Operation Order | Increments the value before using it in the expression. | Uses the current value in the expression, then increments it after. |
+| Value Returned | Returns the updated value. | Returns the original value. |
+| Performance | May be negligibly faster with primitive types as no temporary copy is needed. | Requires creating a temporary copy of the original value, which is a minor overhead. |
+
+
+### Example Arithmetic Operators
+```java
+import java.lang.*;
+
+public class OperatorsArithmetic{
+    public static void main (String[] Args){
+        int myNum = 25;
+        int newNum = 4;
+        int result;
+
+        result = myNum + newNum;
+        System.out.println("Addition : " + myNum + " + " + newNum + " = " + result); 
+
+        result = myNum - newNum;
+        System.out.println("Substraction : " + myNum + " - " + newNum + " = " + result); 
+
+        result = myNum * newNum;
+        System.out.println("Multiplication : " + myNum + " * " + newNum + " = " + result); 
+
+        result = myNum / newNum;
+        System.out.println("Quotient : " + myNum + " / " + newNum + " = " + result); 
+
+        result = myNum % newNum;
+        System.out.println("Remainder : " + myNum + " % " + newNum + " = " + result); 
+
+        myNum++;
+        System.out.println("Increment myNum++ : " + myNum ); 
+
+        newNum--;
+        System.out.println("Decrement newNum-- : " + newNum ); 
+
+        int x = 5;
+        int y = ++x; 
+        // x becomes 6, then y is assigned the new value of x (6).
+        // Result: x = 6, y = 6
+
+        int x = 5;
+        int y = x++; 
+        // The original value of x (5) is assigned to y.
+        // Then x is incremented to 6.
+        // Result: x = 6, y = 5
+
+    }
+}
+// Output
+/*
+Addition : 25 + 4 = 29
+Substraction : 25 - 4 = 21
+Multiplication : 25 * 4 = 100
+Quotient : 25 / 4 = 6
+Remainder : 25 % 4 = 1
+Increment myNum++ : 26
+Decrement newNum-- : 3
+*/
+```
+
+## Assignment Operators
+> Assignment operators are used to assign values to variables.
+
+| Operator | Example | Same As |
+|---|---|---|
+| =	| x = 5	| x = 5 |
+| += | x += 3 | x = x + 3 |
+| -= | x -= 3 | x = x - 3 |
+| *= | x *= 3 | x = x * 3 |
+| /= | x /= 3 | x = x / 3 |
+| %= | x %= 3 | x = x % 3 |
+| &= | x &= 3 | x = x & 3 |
+| \|= | x \|= 3 | x = x \| 3 |
+| ^= | x ^= 3 |	x = x ^ 3 |	
+| >>= |	x >>= 3 | x = x >> 3 |	
+| <<= |	x <<= 3 | x = x << 3 |
+
+### Example Assignment Operators
+```java
+import java.lang.*;
+
+public class OperatorsAssignment {
+    public static void main(String[] Args){
+
+        int a = 10;
+        int b = 20;
+        int c = 0;
+
+        c = a + b;
+        System.out.println("c = a + b = " + c );
+        c += a ;
+        System.out.println("c += a  = " + c );
+        c -= a ;
+        System.out.println("c -= a = " + c );
+        c *= a ;
+        System.out.println("c *= a = " + c );
+    }
+}
+// Output
+/*
+c = a + b = 30
+c += a  = 40
+c -= a = 30
+c *= a = 300
+*/
+```
+
+## Relational Operators
+> Relational/Comparison operators are used to compare two values (or variables) and returns a boolean value either true or false.
+
+| Operator | Name | Example	|
+|---|---|---|
+| == | Equal to	| x == y |
+| != | Not equal | x != y |
+| >	| Greater than | x > y |	
+| <	| Less than	| x < y	|
+| >= | Greater than or equal to	| x >= y |
+| <= | Less than or equal to | x <= y |
+
+### Example Relational Operators
+```java
+import java.lang.*;
+
+public class OperatorsRelaional {
+    public static void main(String[] Args){
+
+        int a = 10;
+        int b = 3;
+        int c = 5;
+
+        System.out.println("Value of A : " + a );
+        System.out.println("Value of B : " + b );
+        System.out.println("Value of C : " + c );
+
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
+        System.out.println("a == c: " + (a == c));
+        System.out.println("a != c: " + (a != c));
+
+    }
+}
+
+// Output
+/*
+Value of A : 10
+Value of B : 3
+Value of C : 5
+a > b: true
+a < b: false
+a >= b: true
+a <= b: false
+a == c: false
+a != c: true
+*/
+```

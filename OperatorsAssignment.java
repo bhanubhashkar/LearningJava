@@ -9,16 +9,11 @@ public class OperatorsAssignment {
 
         c = a + b;
         System.out.println("c = a + b = " + c );
-
         c += a ;
         System.out.println("c += a  = " + c );
-
         c -= a ;
         System.out.println("c -= a = " + c );
-
         c *= a ;
         System.out.println("c *= a = " + c );
-
-
     }
 }

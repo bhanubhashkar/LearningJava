@@ -27,16 +27,15 @@ public class OperatorsArithmetic{
         newNum--;
         System.out.println("Decrement newNum-- : " + newNum ); 
 
-        int x = 5;
-        int y = ++x; 
-        // x becomes 6, then y is assigned the new value of x (6).
-        // Result: x = 6, y = 6
+        int x1 = 5;
+        int y1 = ++x1; 
+        // x becomes 6, then y is assigned the new value of x1 (6).
+        // Result: x1 = 6, y1 = 6
 
-        int x = 5;
-        int y = x++; 
-        // The original value of x (5) is assigned to y.
-        // Then x is incremented to 6.
-        // Result: x = 6, y = 5
-
+        int x2 = 5;
+        int y2 = x2++; 
+        // The original value of x (5) is assigned to y2.
+        // Then x2 is incremented to 6.
+        // Result: x2 = 6, y2 = 5
     }
 }
