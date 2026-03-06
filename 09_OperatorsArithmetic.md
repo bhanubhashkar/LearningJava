@@ -21,3 +21,11 @@
 | Value Returned | Returns the updated value. | Returns the original value. |
 | Performance | May be negligibly faster with primitive types as no temporary copy is needed. | Requires creating a temporary copy of the original value, which is a minor overhead. |
 
+### Example Arithmetic Operators
+```java
+
+// Output
+/*
+
+*/
+```
