@@ -13,16 +13,16 @@
 11. Done : 11 - Relational Operators
 12. Done : 12 - Logical Operators
 13. Done : 13 - Unary Operators
-14.  : 14 - 
+14. Done : 14 - Ternary Operators
 15.  : 15 -
-16. 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
-24. 
-25. 
+16.  : 16 -
+17.  : 17 -
+18.  : 18 -
+19.  : 19 -
+20.  : 20 -
+21.  : 21 -
+22.  : 22 -
+23.  : 23 -
+24.  : 24 -
+25.  : 25 -
 
