@@ -4,7 +4,14 @@
 ## Literals
 Data types are divided into two groups:
 
+### Example Logical Operators
+```java
 
+// Output
+/*
+
+*/
+```
 
 
 
