@@ -13,6 +13,8 @@
 
 // Output
 /*
-
+Regular user: true
+Has access: true
+Not logged in: false
 */
 ```
