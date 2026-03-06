@@ -8,8 +8,8 @@
 06. Done : 06 - Data Types
 07. Done : 07 - Type Conversion 
 08. Done : 08 - Literals & Operators
-09.  : 09 - Arithmatic  
-10.  : 10 - Assignment
+09. Done : 09 - Arithmatic  
+10. Done : 10 - Assignment
 11.  : 11 - Relational
 12.  : 12 - Logical
 13.  : 13 - 
