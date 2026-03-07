@@ -16,7 +16,7 @@
 14. Done : 14 - Ternary Operators
 15. Done : 15 - If & Else Statement 
 16. Done : 16 - Switch Statement
-17.  : 17 -
+17.  : 17 - Loops
 18.  : 18 -
 19.  : 19 -
 20.  : 20 -
