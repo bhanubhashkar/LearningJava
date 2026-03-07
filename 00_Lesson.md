@@ -17,7 +17,7 @@
 15. Done : 15 - If & Else Statement 
 16. Done : 16 - Switch Statement
 17. Done : 17 - Loops
-18.  : 18 -
+18.  : 18 - Class & Object
 19.  : 19 -
 20.  : 20 -
 21.  : 21 -
