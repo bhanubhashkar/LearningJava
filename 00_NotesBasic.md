@@ -36,17 +36,17 @@ JVM (Java Virtual Machine)
 
 > Key Fact: This is why Java is "Write Once, Run Anywhere"—the bytecode is always the same, but each operating system has its own JVM to translate it.
 
-To run a java program, a .java file is required, which the Javac complier (part of JDK) will compile and create a .class file using "javac filename.java" command.
+To run a java program, a .java file is required, which the Javac complier (part of JDK) will compile and create a .class file using "javac filename.java" command. <br>
 In terminal, we can run that java code using "java fileName.class" command which will call the JRE and JVM wil execute the code.
 
 
 ## Java Skeleton
-import java.lang.*;                             --  Import all classes from java.lang package which contains essential classes that form the foundation of Java programming. 
-public class First {                            --  Defines a top-level, publicly accessible class, should be same as file name.
-    public static void main(String[] args) {    --  This method is the mandatory entry point for any Java application, acting as the starting point for the JVM.
-        System.out.println("Hello World .!");   --  It will output the Hello World .! text to the console, followed by a new line.
-    }                                           --  Closing og main method.
-}                                               --  Closing of top-level class.
+import java.lang.*;                             --  Import all classes from java.lang package which contains essential classes that form the foundation of Java programming. <br>
+public class First {                            --  Defines a top-level, publicly accessible class, should be same as file name. <br>
+    public static void main(String[] args) {    --  This method is the mandatory entry point for any Java application, acting as the starting point for the JVM. <br>
+        System.out.println("Hello World .!");   --  It will output the Hello World .! text to the console, followed by a new line. <br>
+    }                                           --  Closing og main method. <br>
+}                                               --  Closing of top-level class. <br>
 
 
 ## Run Java Code
@@ -215,21 +215,21 @@ Type casting means converting one data type into another. For example, turning a
 
 In Java, there are two main types of casting:
 
-1. Widening Type Casting (Implicit Casting)
+1. Widening Type Casting (Implicit Casting) <br>
 Widening casting is done automatically when passing a smaller size type into a larger size type.
 
-This works because there is no risk of losing information. For example, an int value can safely fit inside a double:
-Widening Casting (automatic) - converting a smaller type to a larger type size
+This works because there is no risk of losing information. For example, an int value can safely fit inside a double. <br>
+Widening Casting (automatic) - converting a smaller type to a larger type size <br>
 > byte -> short -> int -> long -> float -> double
 
 
-2. Narrowing Type Casting (Explicit Casting)
+2. Narrowing Type Casting (Explicit Casting) <br>
 Narrowing casting must be done manually by placing the type in parentheses () in front of the value.
 
-This is required because narrowing may result in data loss (for example, dropping decimals when converting a double to an int):
-Data loss every time the converting data size is greater than the size of new datatype.
-For floating number only decimal points gets eliminated, but in case of whole number garbage data can be the result while converting to smaller size.
-Narrowing Casting (manual) - converting a larger type to a smaller type size
+This is required because narrowing may result in data loss (for example, dropping decimals when converting a double to an int). <br>
+Data loss every time the converting data size is greater than the size of new datatype. <br>
+For floating number only decimal points gets eliminated, but in case of whole number garbage data can be the result while converting to smaller size. <br>
+Narrowing Casting (manual) - converting a larger type to a smaller type size <br>
 > double -> float -> long -> int -> char -> short -> byte
 
 * If result of any operation is greater than current datatype it is promoted to increased datatype. Ex multiplication result of two byte size data 10 and 25 is 250 which is greater than range of byte is auto promoted to int type.
@@ -423,7 +423,7 @@ false
 ```
 
 ## Literals
-> In Java, a literal is a fixed, constant value that is written directly into the source code. These values do not change during the execution of a program and are used to initialize variables or define constant expressions.
+> In Java, a literal is a fixed, constant value that is written directly into the source code. These values do not change during the execution of a program and are used to initialize variables or define constant expressions. <br>
 For example, in the statement int age = 25;, the value 25 is an integer literal. 
 
 
@@ -748,19 +748,19 @@ Value of logged in after : false
 > The if-else statement in Java is a decision-making tool used to control the program's flow based on conditions. It executes one block of code if a condition is true and another block if the condition is false. This means if else statements work hand-in-hand with boolean values.
 
 1. If Statement :
-The if statement specifies a block of code to be executed if a condition is true. Every if statement needs a condition that results in true or false.
+The if statement specifies a block of code to be executed if a condition is true. Every if statement needs a condition that results in true or false. <br>
 Ex : Bring unbrella if its raining.
 
 2. If Else Statement :
-The if else statement lets us run a block of code when the condition in the if statement is false.
+The if else statement lets us run a block of code when the condition in the if statement is false. <br>
 Ex : Bring umbrella if its raining, dont bring bring umbrella.
 
 3. If Else If Statement :
-The if else is statements lets run a block of code based on condition if the first condition is false.
+The if else is statements lets run a block of code based on condition if the first condition is false. <br>
 Ex : Bring umbrella if its raining, bring umbrella if its sunny, dont bring bring umbrella.
 
 4. Nested If Else Statement :
-We can also place an if statement inside another if. This is called a nested if statement. A nested if lets you check for a condition only if another condition is already true.
+We can also place an if statement inside another if. This is called a nested if statement. A nested if lets you check for a condition only if another condition is already true. <br>
 Ex : First check If student taken science, then check subject If student taken Math eligible for Engineering, if student taken math eligible for medical, else other field.
 
 
@@ -915,37 +915,44 @@ Weekday............!
 ## Loops
 > Loops in programming allow a set of instructions to run multiple times based on a condition. Loops can execute a block of code as long as a specified condition is true. In Java, there are three types of Loops.
 
-1. while loop : A while loop is used when we want to check the condition before executing the loop body.
-2. do whilw loop : The do-while loop ensures that the code block executes at least once before checking the condition.
-3. for loop : The for loop is used when we know the number of iterations (we know how many times we want to repeat a task). The for statement includes the initialization, condition, and increment/decrement in one line. 
-4. for each loop : The for-each" loop is used exclusively to loop through elements in an array (or other data structures).
+1. while loop : 
+A while loop is used when we want to check the condition before executing the loop body.
+
+2. do whilw loop : 
+The do-while loop ensures that the code block executes at least once before checking the condition.
+
+3. for loop : 
+The for loop is used when we know the number of iterations (we know how many times we want to repeat a task). The for statement includes the initialization, condition, and increment/decrement in one line. 
+
+4. for each loop : 
+The for-each" loop is used exclusively to loop through elements in an array (or other data structures).
 
 ## While Loop
-Syntax
-while (condition) {
-  // code block to be executed
-}
+Syntax <br>
+while (condition) { <br>
+  // code block to be executed <br>
+} <br>
 
 ## Do While Loop
-Syntax
-do {
-  // code block to be executed
-}
-while (condition);
+Syntax <br>
+do { <br>
+  // code block to be executed <br>
+} <br>
+while (condition); <br>
 
 ## For Loop
-Syntax 
-for (statement 1; statement 2; statement 3) {
-  // code block to be executed
-}
-Statement 1 is executed (one time) before the execution of the code block.
-Statement 2 defines the condition for executing the code block.
-Statement 3 is executed (every time) after the code block has been executed.
+Syntax <br>
+for (statement 1; statement 2; statement 3) { <br>
+  // code block to be executed <br>
+} <br>
+Statement 1 is executed (one time) before the execution of the code block. <br>
+Statement 2 defines the condition for executing the code block. <br>
+Statement 3 is executed (every time) after the code block has been executed. <br>
 
 ## For Each Loop
-for (type variableName : arrayName) {
-  // code block to be executed
-}
+for (type variableName : arrayName) { <br>
+  // code block to be executed <br>
+} <br>
 
 ### Example Loops
 ```java
